@@ -79,4 +79,4 @@ pandoc test.md -s -o output.md --filter ./pandoc-localise-yaml
 
 ## Improvements
 
-I don't know how to publish this kind of project so that it's easily usable as a pandoc filter with the syntax `--filter pandoc-localise-yaml` without installing any extra programmes. If anyone wants to give me a hand and/or provide a pull request with that implemented, it's very welcome!
+I don't know how to publish this kind of project so that it's easily usable as a pandoc filter with the syntax `--filter pandoc-localise-yaml` without installing any extra programs. If anyone wants to give me a hand and/or provide a pull request with that implemented, it's very welcome!
