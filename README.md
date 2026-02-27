@@ -4,7 +4,7 @@ This is a [Haskell filter for Pandoc](https://pandoc.org/filters.html) which all
 
 ## How it works
 
-Imagine you use YAML to store your CV, and then generate a human-readable document from that YAML file.^[This is the philosophy of many existing projects, such as [YAML-CV](https://github.com/lgloege/YAML-CV) and [pandoc_resume_template](https://github.com/samijuvonen/pandoc_resume_template) (using pandoc), [YAMLResume](https://yamlresume.dev/) (using LaTeX) or [RenderCV](https://rendercv.com/) (using Typst).] Then your `cv.yaml` file might look something like
+Imagine you use YAML to store your CV, and then generate a human-readable document from that YAML file.[^yamlcv] Then your `cv.yaml` file might look something like
 
 ```yaml
 name: Jane Smith
@@ -64,6 +64,7 @@ birthday: 3 janvier 1234
 lang: fr-CH
 ```
 
+[^yamlcv]: This is the philosophy of many existing projects, such as [YAML-CV](https://github.com/lgloege/YAML-CV) and [pandoc_resume_template](https://github.com/samijuvonen/pandoc_resume_template) (using pandoc), [YAMLResume](https://yamlresume.dev/) (using LaTeX) or [RenderCV](https://rendercv.com/) (using Typst).
 
 ## Usage
 
