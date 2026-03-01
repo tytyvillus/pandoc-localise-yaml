@@ -9,12 +9,12 @@ Imagine you use YAML to store your CV, and then generate a human-readable docume
 ```yaml
 name: Jane Smith
 profession: Underwater basket weaver
-birthday: January 3^rd^, 1234
+birthday: January 1^st^, 1234
 ```
 
 The problem comes if you are likely to need your CV in different languages for different purposes. One option is to maintain several copies of `cv.yaml`, one for each language; but that quickly becomes tedious, and what if some information is shared across documents and needs to be updated? The ideal would be to write different-language versions of each string right next to each other, so they can be quickly checked for errors and updated simultaneously. 
 
-This filter (`pandoc-localise-yaml`) allows you to write, at any level of your YAML file, a prefix specifying which language the following field applies to. For example:
+This filter (`pandoc-localise-yaml`) allows you to write, at any level of your YAML file, a prefix specifying which language the following entry applies to. For example:
 
 ```yaml
 name: Jane Smith
@@ -24,8 +24,8 @@ profession:
   it: Tozzabanconara
 birthday: 
   en: January 1^st^, 1234
-  fr: 3 janvier 1234
-  it: 3 gennaio 1234
+  fr: 1 janvier 1234
+  it: 1° gennaio 1234
 lang: it
 ```
 
@@ -36,7 +36,7 @@ In particular, applying `pandoc-localise-yaml` to the above YAML will output:
 ```yaml
 name: Jane Smith
 profession: Tozzabanconara
-birthday: 3 gennaio 1234
+birthday: 1° gennaio 1234
 lang: it
 ```
 
@@ -51,7 +51,7 @@ profession:
   fr-CH: Mendiant depuis huitante ans
 birthday:
   en: January 1^st^, 1234
-  fr: 3 janvier 1234
+  fr: 1 janvier 1234
 lang: fr-CH
 ```
 
@@ -60,7 +60,7 @@ will become
 ```yaml
 name: Georges de la Gruyère
 profession: Mendiant depuis huitante ans
-birthday: 3 janvier 1234
+birthday: 1 janvier 1234
 lang: fr-CH
 ```
 
