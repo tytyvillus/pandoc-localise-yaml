@@ -24,7 +24,7 @@ profession:
   it: Tozzabanconara
 birthday: 
   en: January 1^st^, 1234
-  fr: 1 janvier 1234
+  fr: 1^er^ janvier 1234
   it: 1° gennaio 1234
 lang: it
 ```
@@ -51,7 +51,7 @@ profession:
   fr-CH: Mendiant depuis huitante ans
 birthday:
   en: January 1^st^, 1234
-  fr: 1 janvier 1234
+  fr: 1^er^ janvier 1234
 lang: fr-CH
 ```
 
@@ -60,7 +60,7 @@ will become
 ```yaml
 name: Georges de la Gruyère
 profession: Mendiant depuis huitante ans
-birthday: 1 janvier 1234
+birthday: 1^er^ janvier 1234
 lang: fr-CH
 ```
 
